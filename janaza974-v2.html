@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0d0b">
+<title>Janaza974</title>
+<style>
+:root{--bg:#0b0d0b;--card:#141a15;--green:#0f6b3f;--green2:#1b8a55;--gold:#d4af37;--gold2:#f0d77a;--txt:#f2efe6;--mut:#a9b0a6;--line:#2a3a2e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.5 Georgia,serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+header{background:linear-gradient(135deg,#0a3d24,#0b0d0b);border-bottom:2px solid var(--gold);padding:12px 16px;display:flex;align-items:center;gap:12px}
+header>svg{width:50px;height:50px;flex:none}
+h1{margin:0;font-size:1.5rem;color:var(--gold)}h1 span{color:var(--txt)}
+.sub{color:var(--mut);font-size:.8rem;font-family:system-ui,sans-serif}
+#acct{margin-left:auto;text-align:right;font:.8rem system-ui,sans-serif;color:var(--mut)}
+main{max-width:720px;margin:0 auto;padding:16px}
+button,select,input,textarea{font:inherit;font-family:system-ui,sans-serif}
+.btn{background:var(--gold);color:#111;border:0;border-radius:10px;padding:10px 16px;font-weight:700;cursor:pointer}
+.btn.alt{background:transparent;color:var(--gold);border:1px solid var(--gold)}
+.btn.sm{padding:4px 10px;font-size:.8rem;font-weight:400}
+.btn.ko{background:transparent;color:#e88;border:1px solid #733}
+select,input,textarea{width:100%;background:#0e130f;color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:10px;margin-top:4px}
+.dua{text-align:center;color:var(--gold2);border:1px solid var(--line);border-radius:12px;padding:12px;background:var(--card);margin-bottom:14px}
+.dua small{display:block;color:var(--mut);font-family:system-ui,sans-serif}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.bar select{flex:1;width:auto;margin:0}
+.tabs{display:flex;gap:6px;margin-bottom:12px}
+.tabs button{flex:1;background:var(--card);color:var(--mut);border:1px solid var(--line);border-radius:10px;padding:8px;cursor:pointer}
+.tabs .on{color:var(--gold);border-color:var(--gold)}
+.card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--green2);border-radius:12px;padding:14px;margin-bottom:12px;cursor:pointer}
+.card h3{margin:0 0 4px;color:var(--gold2)}
+.meta{color:var(--mut);font-size:.85rem;font-family:system-ui,sans-serif}
+.tag{display:inline-block;border-radius:20px;padding:2px 10px;font-size:.78rem;margin-top:6px;font-family:system-ui,sans-serif;background:#3a2d0a;color:var(--gold2)}
+.empty{text-align:center;color:var(--mut);padding:30px}
+.back{background:none;border:0;color:var(--gold);cursor:pointer;padding:0;margin-bottom:12px}
+.info{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin:12px 0;font-family:system-ui,sans-serif}.info p{margin:4px 0}
+.msg{border-left:3px solid var(--gold);padding:6px 12px;margin:10px 0;background:#ffffff08;border-radius:0 8px 8px 0}
+.msg b{color:var(--gold2);font:600 .9rem system-ui,sans-serif}.msg p{margin:2px 0}
+dialog{background:var(--card);color:var(--txt);border:1px solid var(--gold);border-radius:14px;max-width:520px;width:calc(100% - 24px);padding:18px}
+dialog::backdrop{background:#000b}
+label{display:block;margin-top:10px;font-size:.85rem;color:var(--mut);font-family:system-ui,sans-serif}
+.row{display:flex;gap:8px}
+.pt{display:flex;justify-content:space-between;gap:4px;background:var(--card);border:1px solid var(--gold);border-radius:12px;padding:8px;margin-bottom:12px;font:.78rem system-ui,sans-serif;text-align:center}.pt b{display:block;color:var(--gold2)}.pt div{flex:1}
+.wa{background:#25D366;color:#073}
+#lg{background:none;border:1px solid var(--gold);color:var(--gold);border-radius:8px;padding:2px 8px;cursor:pointer;font-size:.8rem}
+[dir=rtl] body{font-family:Tahoma,system-ui,sans-serif}
+.err{color:#e88;font:.85rem system-ui,sans-serif;margin-top:8px}
+.note{color:var(--mut);font-size:.78rem;text-align:center;margin:24px 0 8px;font-family:system-ui,sans-serif}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="logo" viewBox="0 0 100 100">
+<mask id="cm"><rect width="100" height="100" fill="#fff"/><circle cx="62" cy="38" r="27" fill="#000"/></mask>
+<circle cx="50" cy="50" r="48" fill="#0f6b3f" stroke="#d4af37" stroke-width="3"/>
+<circle cx="48" cy="42" r="30" fill="#d4af37" mask="url(#cm)"/>
+<g fill="#0b0d0b" stroke="#d4af37" stroke-width="1.5" stroke-linejoin="round"><rect x="39" y="80" width="22" height="9"/><polygon points="42,80 58,80 55.5,50 44.5,50"/><rect x="40" y="47" width="20" height="4"/><polygon points="44.5,47 55.5,47 54,35 46,35"/><rect x="43" y="32" width="14" height="3"/><path d="M45 32 Q50 20 55 32Z"/><line x1="50" y1="21" x2="50" y2="13"/></g>
+<circle cx="50" cy="12" r="1.8" fill="#d4af37"/></symbol></defs></svg>
+
+<header>
+<svg viewBox="0 0 100 100" role="img" aria-label="Logo Janaza974"><use href="#logo"/></svg>
+<div><h1>Janaza<span>974</span></h1><div class="sub" data-i="tag"></div></div>
+<div id="acct"></div>
+</header>
+<main id="app"></main>
+
+<dialog id="auth">
+<h2 id="a-title" style="margin:0;color:var(--gold)"></h2>
+<label id="a-nl"><span data-i="name"></span><input id="a-name" maxlength="60"></label>
+<label><span data-i="email"></span><input id="a-mail" type="email"></label>
+<label><span data-i="pw"></span><input id="a-pw" type="password"></label>
+<div class="err" id="a-err"></div>
+<div class="row" style="margin-top:14px"><button class="btn alt" id="a-x" style="flex:1" data-i="close"></button><button class="btn" id="a-ok" style="flex:1"></button></div>
+<p class="meta" style="text-align:center"><a href="#" id="a-sw" style="color:var(--gold)"></a> · <a href="#" id="a-fp" style="color:var(--gold)" data-i="forgot"></a></p>
+</dialog>
+
+<dialog id="dlg">
+<h2 style="margin:0;color:var(--gold)" data-i="announce"></h2>
+<p class="meta" data-i="valnote"></p>
+<label><span data-i="fname"></span><input id="f-name" maxlength="80"></label>
+<div class="row"><label style="flex:1"><span data-i="age"></span><input id="f-age" type="number" min="0" max="120"></label><label style="flex:2"><span data-i="commune"></span><select id="f-com"></select></label></div>
+<label><span data-i="date"></span><input id="f-date" type="date"></label>
+<label><span data-i="prayer"></span><input id="f-prayer" maxlength="120"></label>
+<label><span data-i="burial"></span><input id="f-burial" maxlength="120"></label>
+<label><span data-i="famnote"></span><textarea id="f-note" rows="3" maxlength="400"></textarea></label>
+<div class="row" style="margin-top:14px"><button class="btn alt" id="f-x" style="flex:1" data-i="cancel"></button><button class="btn" id="f-ok" style="flex:1" data-i="send"></button></div>
+</dialog>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script>
+// ====== COLLEZ ICI LA CONFIGURATION DE VOTRE PROJET FIREBASE ======
+var firebaseConfig={apiKey:"VOTRE_API_KEY",authDomain:"VOTRE_PROJET.firebaseapp.com",projectId:"VOTRE_PROJET",appId:"VOTRE_APP_ID"};
+// ==================================================================
+firebase.initializeApp(firebaseConfig);
+var auth=firebase.auth(),db=firebase.firestore();
+var COMMUNES=["Saint-Denis","Sainte-Marie","Sainte-Suzanne","Saint-André","Bras-Panon","Salazie","Saint-Benoît","La Plaine-des-Palmistes","Sainte-Rose","Saint-Philippe","Le Tampon","Saint-Joseph","Petite-Île","Entre-Deux","Saint-Pierre","Les Avirons","L’Étang-Salé","Saint-Louis","Cilaos","Saint-Leu","Trois-Bassins","Saint-Paul","La Possession","Le Port"];
+var L={
+tag:["Communauté musulmane de La Réunion","الجالية المسلمة في لاريونيون"],
+login:["Connexion","تسجيل الدخول"],signup:["Créer un compte","إنشاء حساب"],name:["Nom affiché","الاسم"],email:["E-mail","البريد الإلكتروني"],
+pw:["Mot de passe (6 caractères min.)","كلمة المرور (6 أحرف على الأقل)"],close:["Fermer","إغلاق"],reg:["S’inscrire","تسجيل"],
+noacct:["Pas de compte ? Créer un compte","ليس لديك حساب؟ أنشئ حساباً"],hasacct:["Déjà un compte ? Se connecter","لديك حساب؟ سجّل الدخول"],
+forgot:["Mot de passe oublié","نسيت كلمة المرور"],announce:["Annoncer un décès","الإعلان عن وفاة"],
+valnote:["L’annonce sera publiée après validation par un modérateur.","سيتم نشر الإعلان بعد موافقة المشرف."],
+fname:["Nom du défunt / de la défunte *","اسم المتوفى / المتوفاة *"],age:["Âge","العمر"],commune:["Commune *","البلدية *"],
+date:["Date du décès","تاريخ الوفاة"],prayer:["Lieu et heure de la prière (Janaza)","مكان ووقت صلاة الجنازة"],burial:["Lieu d’inhumation","مكان الدفن"],
+famnote:["Message de la famille","رسالة العائلة"],cancel:["Annuler","إلغاء"],send:["Envoyer","إرسال"],logout:["Déconnexion","تسجيل الخروج"],
+mod:["modérateur","مشرف"],tAll:["Annonces","الإعلانات"],tMine:["Mes annonces","إعلاناتي"],tPend:["À valider","للمراجعة"],
+allCom:["Toutes les communes","كل البلديات"],none:["Aucune annonce.","لا توجد إعلانات."],pat:["Qu’Allah accorde la patience à tous.","نسأل الله الصبر للجميع."],
+pending:["En attente de validation","في انتظار الموافقة"],back:["← Retour","→ رجوع"],died:["Décès","الوفاة"],prayerL:["Prière","الصلاة"],
+burialL:["Inhumation","الدفن"],by:["Annoncé par","أعلن عنه"],approve:["✔ Approuver et publier","✔ موافقة ونشر"],del:["Supprimer","حذف"],
+delAnn:["Supprimer l’annonce","حذف الإعلان"],confDel:["Supprimer cette annonce ?","حذف هذا الإعلان؟"],support:["Messages de soutien","رسائل المواساة"],
+first:["Soyez le premier à envoyer vos condoléances.","كن أول من يرسل التعزية."],yourmsg:["Votre message","رسالتك"],
+ph:["Qu’Allah lui accorde Sa miséricorde et le Paradis…","رحمه الله وأسكنه الجنة…"],sendsup:["Envoyer mon soutien","إرسال التعزية"],
+needlogin:["Connectez-vous pour envoyer un message de soutien.","سجّل الدخول لإرسال رسالة مواساة."],wa:["Partager sur WhatsApp","مشاركة عبر واتساب"],
+notif:["🔔 Activer les notifications","🔔 تفعيل الإشعارات"],notifOn:["🔔 Notifications actives (désactiver)","🔔 الإشعارات مفعّلة (إيقاف)"],
+notifNo:["Notifications refusées par le navigateur.","المتصفح رفض الإشعارات."],times:["Horaires de prière","أوقات الصلاة"],
+fajr:["Fajr","الفجر"],sun:["Lever","الشروق"],dhuhr:["Dhor","الظهر"],asr:["Asr","العصر"],mag:["Maghreb","المغرب"],isha:["Isha","العشاء"],
+thanks:["Merci. Votre annonce sera publiée après validation.","شكراً. سيتم نشر إعلانك بعد الموافقة."],years:["ans","سنة"],
+diedOn:["décédé(e) le","توفي(ت) في"],foot:["Que Allah accorde Sa miséricorde aux défunts","رحم الله موتانا وموتى المسلمين"],
+bad:["Identifiants incorrects.","بيانات الدخول غير صحيحة."],needname:["Indiquez votre nom.","أدخل اسمك."],mailfirst:["Saisissez votre e-mail.","أدخل بريدك الإلكتروني."],
+sentreset:["E-mail de réinitialisation envoyé.","تم إرسال رسالة إعادة التعيين."],newA:["Nouvelle annonce","إعلان جديد"],
+shareTxt:["Décès : ","وفاة: "],inna:["Inna lillahi wa inna ilayhi raji’un","إنا لله وإنا إليه راجعون"],
+dua:["Certes, nous appartenons à Allah et c’est à Lui que nous retournerons.","إنا لله وإنا إليه راجعون"]
+};
+var lang=0;try{lang=localStorage.getItem("jl")==="ar"?1:0}catch(e){}
+function t(k){return L[k][lang]}
+var user=null,profile=null,tab="all",filter="",deaths=[],msgs=[],current=null,unD=null,unM=null,signup=false,times={};
+var $=function(i){return document.getElementById(i)},app=$("app");
+function esc(s){var d=document.createElement("div");d.textContent=s==null?"":String(s);return d.innerHTML}
+function fmt(d){if(!d)return"";var p=d.split("-");return p.length==3?p[2]+"/"+p[1]+"/"+p[0]:d}
+function isAdmin(){return profile&&profile.role==="admin"}
+function applyLang(){
+document.documentElement.lang=lang?"ar":"fr";document.documentElement.dir=lang?"rtl":"ltr";
+Array.prototype.forEach.call(document.querySelectorAll("[data-i]"),function(e){e.textContent=t(e.dataset.i)});
+$("f-com").innerHTML=COMMUNES.map(function(c){return"<option>"+esc(c)+"</option>"}).join("");
+setMode(signup);render();
+}
+function toggleLang(){lang=lang?0:1;try{localStorage.setItem("jl",lang?"ar":"fr")}catch(e){}applyLang()}
+
+/* ---------- Auth ---------- */
+function setMode(s){signup=s;$("a-title").textContent=t(s?"signup":"login");$("a-nl").style.display=s?"block":"none";$("a-ok").textContent=t(s?"reg":"login");$("a-sw").textContent=t(s?"hasacct":"noacct");$("a-err").textContent=""}
+function openAuth(s){setMode(!!s);$("auth").showModal()}
+$("a-x").onclick=function(){$("auth").close()};
+$("a-sw").onclick=function(e){e.preventDefault();setMode(!signup)};
+$("a-fp").onclick=function(e){e.preventDefault();var m=$("a-mail").value.trim();if(!m){$("a-err").textContent=t("mailfirst");return}auth.sendPasswordResetEmail(m).then(function(){$("a-err").textContent=t("sentreset")}).catch(function(x){$("a-err").textContent=x.message})};
+$("a-ok").onclick=function(){
+var m=$("a-mail").value.trim(),p=$("a-pw").value,n=$("a-name").value.trim();$("a-err").textContent="";
+if(signup){
+if(!n){$("a-err").textContent=t("needname");return}
+auth.createUserWithEmailAndPassword(m,p).then(function(c){return db.collection("users").doc(c.user.uid).set({name:n,email:m,role:"member"})}).then(function(){$("auth").close()}).catch(function(x){$("a-err").textContent=x.message});
+}else auth.signInWithEmailAndPassword(m,p).then(function(){$("auth").close()}).catch(function(){$("a-err").textContent=t("bad")});
+};
+auth.onAuthStateChanged(function(u){
+user=u;profile=null;
+if(!u){tab="all";render();watch();startNotif();return}
+db.collection("users").doc(u.uid).get().then(function(s){profile=s.exists?s.data():{name:u.email,role:"member"}}).catch(function(){profile={name:u.email,role:"member"}}).then(function(){render();watch();startNotif()});
+});
+function acct(){
+$("acct").innerHTML='<button id="lg">'+(lang?"Français":"العربية")+'</button><br>'+(user?esc(profile?profile.name:"")+(isAdmin()?" · "+t("mod"):"")+' <a href="#" id="lo" style="color:var(--gold)">'+t("logout")+"</a>":'<button class="btn sm" id="li">'+t("login")+"</button>");
+$("lg").onclick=toggleLang;
+if(user)$("lo").onclick=function(e){e.preventDefault();auth.signOut()};else $("li").onclick=function(){openAuth(false)};
+}
+
+/* ---------- Données ---------- */
+function watch(){
+if(unD){unD();unD=null}
+var col=db.collection("deaths"),q;
+if(tab==="pending"&&isAdmin())q=col.where("status","==","pending");
+else if(tab==="mine"&&user)q=col.where("uid","==",user.uid);
+else q=col.where("status","==","approved");
+unD=q.limit(100).onSnapshot(function(s){
+deaths=s.docs.map(function(x){var o=x.data();o.id=x.id;return o}).sort(function(a,b){return(b.ts||0)-(a.ts||0)});
+if(current)detail();else list();
+},function(e){app.innerHTML='<div class="empty">'+esc(e.message)+"</div>"});
+}
+function render(){acct();if(current)detail();else list()}
+
+/* ---------- Horaires de prière (API Aladhan) ---------- */
+function loadTimes(){
+var city=filter||"Saint-Denis",el=$("pt");if(!el)return;
+function show(tm){var e=$("pt");if(!e)return;e.innerHTML=[["fajr","Fajr"],["sun","Sunrise"],["dhuhr","Dhuhr"],["asr","Asr"],["mag","Maghrib"],["isha","Isha"]].map(function(k){return"<div><b>"+t(k[0])+"</b>"+esc((tm[k[1]]||"").slice(0,5))+"</div>"}).join("")}
+if(times[city])return show(times[city]);
+fetch("https://api.aladhan.com/v1/timingsByCity?city="+encodeURIComponent(city)+"&country=Reunion&method=3").then(function(r){return r.json()}).then(function(j){times[city]=j.data.timings;show(times[city])}).catch(function(){var e=$("pt");if(e)e.style.display="none"});
+}
+
+/* ---------- Notifications (navigateur) ---------- */
+var unN=[];
+function notifOn(){try{return localStorage.getItem("jn")==="1"&&window.Notification&&Notification.permission==="granted"}catch(e){return false}}
+function startNotif(){
+unN.forEach(function(u){u()});unN=[];
+if(!notifOn())return;
+function watchQ(q,label){var first=true;unN.push(q.limit(50).onSnapshot(function(s){
+if(!first)s.docChanges().forEach(function(c){var d=c.doc.data();if(c.type==="added"&&(!filter||d.commune===filter)&&(!user||d.uid!==user.uid))new Notification(label+" "+d.name,{body:d.commune+(d.prayer?" · "+d.prayer:"")})});first=false}))}
+watchQ(db.collection("deaths").where("status","==","approved"),"🕌 "+t("shareTxt"));
+if(isAdmin())watchQ(db.collection("deaths").where("status","==","pending"),"⏳ "+t("tPend")+" :");
+}
+function toggleNotif(){
+if(notifOn()){try{localStorage.setItem("jn","0")}catch(e){}startNotif();list();return}
+if(!window.Notification){alert(t("notifNo"));return}
+Notification.requestPermission().then(function(p){if(p==="granted"){try{localStorage.setItem("jn","1")}catch(e){}startNotif()}else alert(t("notifNo"));list()});
+}
+
+/* ---------- Vues ---------- */
+function list(){
+var items=deaths.filter(function(d){return!filter||d.commune===filter});
+var h='<div class="dua">إِنَّا لِلَّٰهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ<small>'+t("dua")+"</small></div>";
+h+='<div class="meta" style="margin-bottom:4px">'+t("times")+" · "+esc(filter||"Saint-Denis")+'</div><div class="pt" id="pt"></div>';
+if(user){h+='<div class="tabs"><button data-t="all" class="'+(tab==="all"?"on":"")+'">'+t("tAll")+'</button><button data-t="mine" class="'+(tab==="mine"?"on":"")+'">'+t("tMine")+"</button>"+(isAdmin()?'<button data-t="pending" class="'+(tab==="pending"?"on":"")+'">'+t("tPend")+"</button>":"")+"</div>"}
+h+='<div class="bar"><select id="flt"><option value="">'+t("allCom")+"</option>"+COMMUNES.map(function(c){return"<option"+(c===filter?" selected":"")+">"+esc(c)+"</option>"}).join("")+'</select><button class="btn" id="new">+ '+t("announce")+"</button></div>";
+h+='<div class="bar"><button class="btn alt sm" id="nt">'+t(notifOn()?"notifOn":"notif")+"</button></div>";
+if(!items.length)h+='<div class="empty">'+t("none")+"<br>"+t("pat")+"</div>";
+items.forEach(function(d){h+='<div class="card" data-id="'+esc(d.id)+'"><h3>'+esc(d.name)+(d.age?' <span class="meta">('+esc(d.age)+" "+t("years")+")</span>":"")+'</h3><div class="meta">'+esc(d.commune)+(d.date?" · "+t("diedOn")+" "+fmt(esc(d.date)):"")+"</div>"+(d.prayer?'<div class="meta">🕌 '+esc(d.prayer)+"</div>":"")+(d.status==="pending"?'<span class="tag">'+t("pending")+"</span>":"")+"</div>"});
+h+='<div class="note">Janaza974 · '+t("foot")+"</div>";
+app.innerHTML=h;loadTimes();
+$("flt").onchange=function(e){filter=e.target.value;list()};
+$("new").onclick=function(){user?$("dlg").showModal():openAuth(false)};
+$("nt").onclick=toggleNotif;
+Array.prototype.forEach.call(app.querySelectorAll(".tabs button"),function(b){b.onclick=function(){tab=b.dataset.t;watch();list()}});
+Array.prototype.forEach.call(app.querySelectorAll(".card"),function(c){c.onclick=function(){openDeath(c.dataset.id)}});
+}
+function openDeath(id){
+current=id;msgs=[];
+unM=db.collection("deaths/"+id+"/messages").orderBy("ts","asc").limit(200).onSnapshot(function(s){msgs=s.docs.map(function(x){var o=x.data();o.id=x.id;return o});if(current===id&&!(document.activeElement&&document.activeElement.id==="m-t"))detail()},function(){});
+detail();
+}
+function closeDeath(){if(unM){unM();unM=null}current=null;msgs=[]}
+function shareWA(d){
+var txt="🕌 "+t("inna")+"\n\n"+t("shareTxt")+d.name+(d.age?" ("+d.age+" "+t("years")+")":"")+"\n📍 "+d.commune+(d.date?"\n📅 "+fmt(d.date):"")+(d.prayer?"\n🕌 "+d.prayer:"")+(d.burial?"\n🪦 "+d.burial:"")+"\n\n"+location.origin+location.pathname;
+window.open("https://wa.me/?text="+encodeURIComponent(txt),"_blank");
+}
+function detail(){
+var d=deaths.filter(function(x){return x.id===current})[0];
+if(!d){closeDeath();list();return}
+var h='<button class="back" id="bk">'+t("back")+'</button><h2 style="margin:0;color:var(--gold)">'+esc(d.name)+(d.age?' <span class="meta">('+esc(d.age)+" "+t("years")+")</span>":"")+'</h2><div class="meta">'+esc(d.commune)+"</div>";
+h+='<div class="info">'+(d.date?"<p>📅 "+t("died")+" : "+fmt(esc(d.date))+"</p>":"")+(d.prayer?"<p>🕌 "+t("prayerL")+" : "+esc(d.prayer)+"</p>":"")+(d.burial?"<p>🪦 "+t("burialL")+" : "+esc(d.burial)+"</p>":"")+(d.note?"<p>💬 "+esc(d.note)+"</p>":"")+'<p class="meta">'+t("by")+" "+esc(d.by)+"</p></div>";
+if(d.status==="approved")h+='<button class="btn wa" id="wa">'+t("wa")+"</button> ";
+if(isAdmin()&&d.status==="pending")h+='<button class="btn" id="ok">'+t("approve")+"</button> ";
+if(isAdmin()||(user&&d.uid===user.uid))h+='<button class="btn sm ko" id="del">'+t("delAnn")+"</button>";
+if(d.status==="approved"){
+h+='<h3 style="color:var(--gold)">'+t("support")+"</h3>";
+if(!msgs.length)h+='<div class="meta">'+t("first")+"</div>";
+msgs.forEach(function(m){h+='<div class="msg"><b>'+esc(m.author)+"</b><p>"+esc(m.text)+"</p>"+((isAdmin()||(user&&m.uid===user.uid))?'<button class="btn sm ko" data-m="'+esc(m.id)+'">'+t("del")+"</button>":"")+"</div>"});
+h+=user?'<label>'+t("yourmsg")+'<textarea id="m-t" rows="3" maxlength="400" placeholder="'+esc(t("ph"))+'"></textarea></label><button class="btn" id="m-ok" style="margin-top:10px;width:100%">'+t("sendsup")+"</button>":'<p class="meta">'+t("needlogin")+'</p><button class="btn" id="m-li">'+t("login")+"</button>";
+}
+app.innerHTML=h;window.scrollTo(0,0);
+$("bk").onclick=function(){closeDeath();list()};
+if($("wa"))$("wa").onclick=function(){shareWA(d)};
+if($("ok"))$("ok").onclick=function(){db.collection("deaths").doc(d.id).update({status:"approved"}).then(function(){closeDeath();list()})};
+if($("del"))$("del").onclick=function(){if(confirm(t("confDel"))){var i=d.id;closeDeath();db.collection("deaths").doc(i).delete().then(list)}};
+if($("m-li"))$("m-li").onclick=function(){openAuth(false)};
+if($("m-ok"))$("m-ok").onclick=function(){var x=$("m-t").value.trim();if(!x)return;db.collection("deaths/"+d.id+"/messages").add({uid:user.uid,author:profile.name,text:x,ts:Date.now()})};
+Array.prototype.forEach.call(app.querySelectorAll("[data-m]"),function(b){b.onclick=function(){db.doc("deaths/"+d.id+"/messages/"+b.dataset.m).delete()}});
+}
+
+/* ---------- Nouvelle annonce ---------- */
+$("f-x").onclick=function(){$("dlg").close()};
+$("f-ok").onclick=function(){
+var v=function(i){return $(i).value.trim()};
+if(!v("f-name"))return;
+db.collection("deaths").add({name:v("f-name"),age:v("f-age"),commune:v("f-com"),date:v("f-date"),prayer:v("f-prayer"),burial:v("f-burial"),note:v("f-note"),by:profile.name,uid:user.uid,status:"pending",ts:Date.now()})
+.then(function(){$("dlg").close();["f-name","f-age","f-date","f-prayer","f-burial","f-note"].forEach(function(i){$(i).value=""});tab="mine";watch();list();alert(t("thanks"))});
+};
+applyLang();
+</script>
+</body>
+</html>
